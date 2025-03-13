@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
+    integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <ul class="header__info">
+          <li>
+            <a href="#" rel="nofollow noopener noreferrer" target="_blank">Київ, вул. Прорізна 22</a>
+          </li>
+          <li>
+            <a href="#" rel="nofollow noopener noreferrer" target="_blank">info@vividfusion.art</a>
+          </li>
+          <li>
+            <a href="#" rel="nofollow noopener noreferrer" target="_blank">(123) 456 - 7890</a>
+          </li>
+          <li>
+            <a href="#" rel="nofollow noopener noreferrer" target="_blank">Facebook</a>
+          </li>
+          <li>
+            <a href="#" rel="nofollow noopener noreferrer" target="_blank">Instagram</a>
+          </li>
+        </ul>
+        <ul class="header__languege">
+          <li class="header__languege-child">
+            <span>УКР</span>
+            <div class="header__languege-dropdown-wrap">
+              <ul class="header__languege-dropdown">
+                <li>
+                  <a href="#">УКР</a>
+                </li>
+                <li>
+                  <a href="#">EN</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="header__mid">
+        <a href="#" class="header__logo">
+          <img src="images/icons/logo.svg" alt="logo">
+        </a>
+        <form class="search-form">
+          <button>
+            <img src="images/icons/search.svg" alt="search">
+          </button>
+          <input type="text" placeholder="Пошук" required>
+        </form>
+        <a href="#" class="header__cabinet">Мій кабінет</a>
+        <a href="#" class="header__favorite">
+          <img src="images/icons/heart.svg" alt="heart">
+        </a>
+        <a href="#" class="header__basket">
+          <img src="images/icons/basket.svg" alt="basket">
+        </a>
+      </div>
+      <div class="header__bottom">
+        <nav class="header__nav">
+          <ul>
+            <li>
+              <a href="#">картини на стіну</a>
+            </li>
+            <li class="header__item-child">
+              <span>Подарунки</span>
+              <ul class="header__submenu">
+                <li>
+                  <a href="#">Артмініатюри</a>
+                </li>
+                <li>
+                  <a href="#">Аксесуари</a>
+                </li>
+                <li>
+                  <a href="#">книги</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__item-child">
+              <span>Художники</span>
+              <ul class="header__submenu">
+                <li>
+                  <a href="#">Класики</a>
+                </li>
+                <li>
+                  <a href="#">Імена цього місяця</a>
+                </li>
+                <li>
+                  <a href="#"> Всі художники від А до Я</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__item-child">
+              <span>Інтер’єри</span>
+              <ul class="header__submenu">
+                <li>
+                  <a href="#">Житлові інтер’єри</a>
+                </li>
+                <li>
+                  <a href="#">Офісні простори</a>
+                </li>
+                <li>
+                  <a href="#">Готелі та лаунж зони</a>
+                </li>
+                <li>
+                  <a href="#">Кафе та ресторани </a>
+                </li>
+                <li>
+                  <a href="#">Громадські простори</a>
+                </li>
+                <li>
+                  <a href="#">Незвичайні локації</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Матеріали</a>
+            </li>
+            <li class="header__item-child">
+              <span>Інформація</span>
+              <ul class="header__submenu">
+                <li>
+                  <a href="#">Про нас</a>
+                </li>
+                <li>
+                  <a href="#">Оплата та доставка</a>
+                </li>
+                <li>
+                  <a href="#"> Монтаж</a>
+                </li>
+                <li>
+                  <a href="#"> Часті запитання</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Контакти</a>
+            </li>
+            <li>
+              <a href="#">Блог</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div class="wrapper">
+    <main class="main">
+      <section class="intro">
+        <div class="container">
+          <div class="intro__top">
+            <img src="images/icons/logo-2.svg" alt="logo">
+            <h1>арт-платформа</h1>
+            <p>колекційні артпринти українських художників тепер доступні кожному</p>
+          </div>
+
+
+          <div class="intro__bg" style="background-image: url('images/content/intro.webp');">
+
+            <div class="intro__slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="images/content/intro-slider-1.webp" alt="img">
+                  <p>Lorem ipsum dolo Lorem ipsumLorem ipsum</p>
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/content/intro-slider-2.webp" alt="img">
+                  <p>Lorem ipsum dolo</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+      </section>
+
+      <section class="dss-about">
+        <div class="container">
+          <div class="dss-about__inner">
+            <div class="dss-about__left">
+              <h3>Про платформу</h3>
+            </div>
+            <div class="dss-about__right">
+              <h2 class="title">Наша місія - це популяризація та просування українського мистецтва. Ми прагнемо зробити
+                його більш доступним, впізнаним та затребуваним як в Україні, так і за кордоном.</h2>
+              <div class="dss-about__box">
+                <div class="dss-about__text">
+                  <p>артпринти від vivid fusion - це високоякісні друковані копії оригінальних художніх творів.</p>
+                </div>
+                <div class="dss-about__text">
+                  <p>завдяки сучасним технологіям наші артпринти зберігають естетику та деталі оригіналу, і водночас
+                    лишаються доступними для широкої аудиторії.</p>
+                </div>
+              </div>
+              <img src="images/content/about.webp" alt="img">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="dss-prints">
+        <div class="container">
+          <div class="dss-prints__inner">
+            <div class="dss-prints__left">
+              <h2 class="title">артпринти</h2>
+              <a href="#" class="btn btn--black">В каталог</a>
+            </div>
+            <div class="dss-prints__right">
+              <div class="dss-item">
+                <div class="dss-item__img">
+                  <img src="images/content/print-item-1.webp" alt="img">
+                </div>
+                <div class="dss-item__box">
+                  <div class="dss-item__info">
+                    <div class="dss-item__name">Парк шевченка</div>
+                    <div class="dss-item__author">Олексій шовкуненко</div>
+                  </div>
+                  <button class="dss-item__btn active">
+                    <img src="images/icons/heart-1.svg" alt="heart">
+                    <img src="images/icons/heart-2.svg" alt="heart">
+                  </button>
+                </div>
+                <div class="dss-item__price">8000 грн</div>
+              </div>
+              <div class="dss-item">
+                <div class="dss-item__img">
+                  <img src="images/content/print-item-1.webp" alt="img">
+                </div>
+                <div class="dss-item__box">
+                  <div class="dss-item__info">
+                    <div class="dss-item__name">Парк шевченка</div>
+                    <div class="dss-item__author">Олексій шовкуненко</div>
+                  </div>
+                  <button class="dss-item__btn">
+                    <img src="images/icons/heart-1.svg" alt="heart">
+                    <img src="images/icons/heart-2.svg" alt="heart">
+                  </button>
+                </div>
+                <div class="dss-item__price">8000 грн</div>
+              </div>
+              <div class="dss-item">
+                <div class="dss-item__img">
+                  <img src="images/content/print-item-1.webp" alt="img">
+                </div>
+                <div class="dss-item__box">
+                  <div class="dss-item__info">
+                    <div class="dss-item__name">Парк шевченка</div>
+                    <div class="dss-item__author">Олексій шовкуненко</div>
+                  </div>
+                  <button class="dss-item__btn">
+                    <img src="images/icons/heart-1.svg" alt="heart">
+                    <img src="images/icons/heart-2.svg" alt="heart">
+                  </button>
+                </div>
+                <div class="dss-item__price">8000 грн</div>
+              </div>
+              <div class="dss-item">
+                <div class="dss-item__img">
+                  <img src="images/content/print-item-1.webp" alt="img">
+                </div>
+                <div class="dss-item__box">
+                  <div class="dss-item__info">
+                    <div class="dss-item__name">Парк шевченка</div>
+                    <div class="dss-item__author">Олексій шовкуненко</div>
+                  </div>
+                  <button class="dss-item__btn">
+                    <img src="images/icons/heart-1.svg" alt="heart">
+                    <img src="images/icons/heart-2.svg" alt="heart">
+                  </button>
+                </div>
+                <div class="dss-item__price">8000 грн</div>
+              </div>
+              <div class="dss-item">
+                <div class="dss-item__img">
+                  <img src="images/content/print-item-1.webp" alt="img">
+                </div>
+                <div class="dss-item__box">
+                  <div class="dss-item__info">
+                    <div class="dss-item__name">Парк шевченка</div>
+                    <div class="dss-item__author">Олексій шовкуненко</div>
+                  </div>
+                  <button class="dss-item__btn">
+                    <img src="images/icons/heart-1.svg" alt="heart">
+                    <img src="images/icons/heart-2.svg" alt="heart">
+                  </button>
+                </div>
+                <div class="dss-item__price">8000 грн</div>
+              </div>
+              <div class="dss-item">
+                <div class="dss-item__img">
+                  <img src="images/content/print-item-1.webp" alt="img">
+                </div>
+                <div class="dss-item__box">
+                  <div class="dss-item__info">
+                    <div class="dss-item__name">Парк шевченка</div>
+                    <div class="dss-item__author">Олексій шовкуненко</div>
+                  </div>
+                  <button class="dss-item__btn">
+                    <img src="images/icons/heart-1.svg" alt="heart">
+                    <img src="images/icons/heart-2.svg" alt="heart">
+                  </button>
+                </div>
+                <div class="dss-item__price">8000 грн</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="dss-arts">
+        <div class="container">
+          <h2 class="title">Художники</h2>
+          <div class="dss-arts__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/content/arts-1.webp" alt="art">
+                <div class="dss-arts__name">Олексій шовкуненко</div>
+                <div class="dss-arts__info">пейзаж, портрет, натюрморт</div>
+              </div>
+              <div class="swiper-slide">
+                <img src="images/content/arts-1.webp" alt="art">
+                <div class="dss-arts__name">Олексій шовкуненко</div>
+                <div class="dss-arts__info">пейзаж, портрет, натюрморт</div>
+              </div>
+              <div class="swiper-slide">
+                <img src="images/content/arts-1.webp" alt="art">
+                <div class="dss-arts__name">Олексій шовкуненко</div>
+                <div class="dss-arts__info">пейзаж, портрет, натюрморт</div>
+              </div>
+              <div class="swiper-slide">
+                <img src="images/content/arts-1.webp" alt="art">
+                <div class="dss-arts__name">Олексій шовкуненко</div>
+                <div class="dss-arts__info">пейзаж, портрет, натюрморт</div>
+              </div>
+              <div class="swiper-slide">
+                <img src="images/content/arts-1.webp" alt="art">
+                <div class="dss-arts__name">Олексій шовкуненко</div>
+                <div class="dss-arts__info">пейзаж, портрет, натюрморт</div>
+              </div>
+            </div>
+            <div class="swiper-button-next"><svg width="27" height="11" viewBox="0 0 27 11" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.729 5.39551L26.2707 5.39551" stroke="black" stroke-width="1.00088"
+                  stroke-linejoin="round" />
+                <path d="M5.6875 0.645508C3.83251 2.5005 2.79249 3.54052 0.937501 5.39551L5.6875 10.1455" stroke="black"
+                  stroke-width="1.00088" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div class="swiper-button-prev"><svg width="27" height="11" viewBox="0 0 27 11" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.729 5.39551L26.2707 5.39551" stroke="black" stroke-width="1.00088"
+                  stroke-linejoin="round" />
+                <path d="M5.6875 0.645508C3.83251 2.5005 2.79249 3.54052 0.937501 5.39551L5.6875 10.1455" stroke="black"
+                  stroke-width="1.00088" stroke-linejoin="round" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="dss-colections">
+        <div class="container">
+          <div class="dss-colections__inner">
+            <div class="dss-colections__left">
+              <h2 class="title">Колекції</h2>
+              <p>наша колекція налічує понад 1000 унікальних робіт українських художників. </p>
+              <p> Це лімітовані, підписані та сертифіковані принти музейної якості, які мають колекційну цінність.</p>
+            </div>
+            <div class="dss-colections__right">
+              <div class="dss-colections__top">
+                <a href="#">сюжети</a>
+                <a href="#">Види мистецтв</a>
+                <a href="#">Стилі</a>
+                <a class="active" href="#">ТЕми</a>
+                <a href="#">Періоди</a>
+                <a href="#">Школи мистецтв</a>
+                <a href="#">Колір</a>
+                <a href="#">Матеріал</a>
+              </div>
+              <div class="dss-colections__list">
+                <div class="dss-colections__item">
+                  <img src="images/content/colections.webp" alt="img">
+                  <p>Абстракція</p>
+                </div>
+                <div class="dss-colections__item">
+                  <img src="images/content/colections.webp" alt="img">
+                  <p>Абстракція</p>
+                </div>
+                <div class="dss-colections__item">
+                  <img src="images/content/colections.webp" alt="img">
+                  <p>Абстракція</p>
+                </div>
+                <div class="dss-colections__item">
+                  <img src="images/content/colections.webp" alt="img">
+                  <p>Абстракція</p>
+                </div>
+                <div class="dss-colections__item">
+                  <img src="images/content/colections.webp" alt="img">
+                  <p>Абстракція</p>
+                </div>
+                <div class="dss-colections__item">
+                  <img src="images/content/colections.webp" alt="img">
+                  <p>Абстракція</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="dss-news">
+        <div class="container">
+          <div class="dss-news__top">
+            <h2 class="title">Новини</h2>
+            <a href="#">Всі новини <img src="images/icons/arrow-slider.svg" alt="arrow"></a>
+          </div>
+          <div class="dss-news__item">
+            <div class="dss-news__img">
+              <img src="images/content/news-1.webp" alt="img">
+            </div>
+            <div class="dss-news__info">
+              <div class="dss-news__date">10 лютого 2024</div>
+              <h3>Мистецтво, що говорить: як обрати ідеальний артпринт для свого простору</h3>
+              <div class="dss-news__text">
+                <p>Вибір принта – це не просто декор, а спосіб висловити себе.
+                  Дізнайтесь, як знайти мистецтво, яке буде надихати щодня </p>
+              </div>
+              <a href="#" class="dss-news__link">
+                Читати далі
+                <img src="images/icons/arrow-grey.svg" alt="arrow">
+              </a>
+            </div>
+          </div>
+          <div class="dss-news__item">
+            <div class="dss-news__img">
+              <img src="images/content/news-1.webp" alt="img">
+            </div>
+            <div class="dss-news__info">
+              <div class="dss-news__date">10 лютого 2024</div>
+              <h3>Мистецтво, що говорить: як обрати ідеальний артпринт для свого простору</h3>
+              <div class="dss-news__text">
+                <p>Вибір принта – це не просто декор, а спосіб висловити себе.
+                  Дізнайтесь, як знайти мистецтво, яке буде надихати щодня </p>
+              </div>
+              <a href="#" class="dss-news__link">
+                Читати далі
+                <img src="images/icons/arrow-grey.svg" alt="arrow">
+              </a>
+            </div>
+          </div>
+          <div class="dss-news__item">
+            <div class="dss-news__img">
+              <img src="images/content/news-1.webp" alt="img">
+            </div>
+            <div class="dss-news__info">
+              <div class="dss-news__date">10 лютого 2024</div>
+              <h3>Мистецтво, що говорить: як обрати ідеальний артпринт для свого простору</h3>
+              <div class="dss-news__text">
+                <p>Вибір принта – це не просто декор, а спосіб висловити себе.
+                  Дізнайтесь, як знайти мистецтво, яке буде надихати щодня </p>
+              </div>
+              <a href="#" class="dss-news__link">
+                Читати далі
+                <img src="images/icons/arrow-grey.svg" alt="arrow">
+              </a>
+            </div>
+          </div>
+          <div class="dss-news__item">
+            <div class="dss-news__img">
+              <img src="images/content/news-1.webp" alt="img">
+            </div>
+            <div class="dss-news__info">
+              <div class="dss-news__date">10 лютого 2024</div>
+              <h3>Мистецтво, що говорить: як обрати ідеальний артпринт для свого простору</h3>
+              <div class="dss-news__text">
+                <p>Вибір принта – це не просто декор, а спосіб висловити себе.
+                  Дізнайтесь, як знайти мистецтво, яке буде надихати щодня </p>
+              </div>
+              <a href="#" class="dss-news__link">
+                Читати далі
+                <img src="images/icons/arrow-grey.svg" alt="arrow">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq">
+        <div class="container">
+          <div class="faq__inner">
+            <div class="faq__left">
+              <h2 class="title">Запитання/відповіді</h2>
+              <p>Тут ви отримаєте відповіді на поширені запитання наших клієнтів до нас</p>
+            </div>
+            <div class="faq__right">
+              <div class="accordeon">
+                <dl>
+                  <dt>
+                    Чи можна замовити артпринт <br>
+                    в індивідуальному розмірі?
+                  </dt>
+                  <dd>
+                    <p>Так, якщо вам потрібен особливий формат, ми можемо узгодити друк у бажаному розмірі. Просто
+                      зв’яжіться з нами, і ми підберемо оптимальний варіант.</p>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>
+                    Як оформити замовлення?
+                  </dt>
+                  <dd>
+                    <p>Так, якщо вам потрібен особливий формат, ми можемо узгодити друк у бажаному розмірі. Просто
+                      зв’яжіться з нами, і ми підберемо оптимальний варіант.</p>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>
+                    Які способи оплати доступні?
+                  </dt>
+                  <dd>
+                    <p>Так, якщо вам потрібен особливий формат, ми можемо узгодити друк у бажаному розмірі. Просто
+                      зв’яжіться з нами, і ми підберемо оптимальний варіант.</p>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>
+                    Як ви доставляєте замовлення?
+                  </dt>
+                  <dd>
+                    <p>Так, якщо вам потрібен особливий формат, ми можемо узгодити друк у бажаному розмірі. Просто
+                      зв’яжіться з нами, і ми підберемо оптимальний варіант.</p>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>
+                    Чи можу я повернути або обміняти артпринт?
+                  </dt>
+                  <dd>
+                    <p>Так, якщо вам потрібен особливий формат, ми можемо узгодити друк у бажаному розмірі. Просто
+                      зв’яжіться з нами, і ми підберемо оптимальний варіант.</p>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>
+                    Чи можна замовити принт із власним зображенням?
+                  </dt>
+                  <dd>
+                    <p>Так, якщо вам потрібен особливий формат, ми можемо узгодити друк у бажаному розмірі. Просто
+                      зв’яжіться з нами, і ми підберемо оптимальний варіант.</p>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <a href="#" class="footer__logo">
+            <img src="images/icons/logo-footer.svg" alt="logo">
+          </a>
+          <div class="footer__col">
+            <div class="footer__title">навігація</div>
+            <u>
+              <li>
+                <a href="#">Артпринти</a>
+              </li>
+              <li>
+                <a href="#">Художники</a>
+              </li>
+              <li>
+                <a href="#">Інформація</a>
+              </li>
+              <li>
+                <a href="#">Про нас</a>
+              </li>
+              <li>
+                <a href="#">Контакти</a>
+              </li>
+            </u>
+          </div>
+          <div class="footer__col">
+            <div class="footer__title">Адреса шоурума</div>
+            <a href="#" target="_blank">Київ, вул. Прорізна 22</a>
+            <div class="footer__title">Пошта</div>
+            <a href="#">info@vividfusion.art</a>
+            <div class="footer__title">Телефон для зв’язку</div>
+            <a href="#">(123) 456 - 7890</a>
+            <div class="footer__title"></div>
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">Instagram</a>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>Політика конфіденційності</p>
+          <p>2025</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+    integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

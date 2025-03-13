@@ -1,0 +1,135 @@
+html,
+body {
+	height: 100%;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul,
+li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+input,
+textarea {
+	outline: none;
+	font-size: 16px !important;
+
+	&::placeholder {
+		font-size: 16px !important;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	font-size: inherit;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+
+.footer {
+	flex: 0 0 auto;
+}
+
+body {
+	font-family: "Geologica", sans-serif;
+	color: rgb(0, 0, 0);
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 120%;
+	letter-spacing: -.4px;
+}
+
+body.lock {
+	overflow: hidden;
+}
+
+.container {
+	max-width: 1440px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.title {
+	color: rgb(0, 0, 0);
+	font-size: 40px;
+	font-weight: 400;
+	line-height: 120%;
+	text-transform: uppercase;
+}
+.title-two{
+	font-size: 87px;
+	font-weight: 400;
+	line-height: 120%;
+	text-transform: uppercase;
+}
+/*start breadcrumbs==========*/
+.breadcrumbs {
+  margin: 0 0 10px;
+  background-color: transparent;
+
+  &__inner {
+    padding: 10px 0px;
+    overflow: hidden;
+    max-width: 1400px;
+  }
+
+  &__list {
+    li {
+      display: inline;
+      position: relative;
+			color: rgb(140, 140, 140);
+			font-size: 14px;
+			font-weight: 400;
+      &+li {
+        padding-left: 15px;
+
+        &::before {
+          content: "/";
+          color: rgb(140, 140, 140);
+font-size: 14px;
+font-weight: 400;
+          position: absolute;
+          left: 2px;
+          top: 0;
+        }
+      }
+
+
+      span {
+        color: rgb(142, 142, 142);
+      }
+    }
+  }
+}
+
+/*end breadcrumbs==========*/

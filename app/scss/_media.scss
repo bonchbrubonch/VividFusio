@@ -1,0 +1,316 @@
+@media (min-width: 1200px) {
+  .header__item-child ul {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all .6s ease;
+    box-shadow: -1px 5px 8px 0px rgba(34, 60, 80, 0.2);
+  }
+
+  .header__item-child:hover>ul {
+    visibility: visible;
+    transform: translateY(0);
+    opacity: 1;
+    box-shadow: -1px 5px 8px 0px rgba(34, 60, 80, 0.2);
+  }
+}
+
+@media (max-width: 1439px) {
+  .dss-about .title {
+    text-align: left;
+  }
+
+  .title {
+    font-size: 36px !important;
+  }
+}
+
+@media (max-width: 1400px) {
+  .intro h1 {
+    font-size: 64px;
+  }
+
+
+
+
+}
+
+@media (max-width: 1200px) {
+  .intro__top img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .intro__bg {
+    padding: 190px 0 0 0;
+    height: 595px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .intro__bg {
+    padding: 160px 0 0 0;
+  }
+
+  .intro__slider {
+    width: 265px;
+    height: 270px;
+  }
+
+  .intro p {
+    font-size: 16px;
+  }
+
+  .intro h1 {
+    font-size: 48px;
+  }
+
+  .title {
+    font-size: 32px !important;
+  }
+
+  .dss-item__img {
+    padding: 20px;
+  }
+
+  .dss-colections__item {
+    padding: 15px;
+  }
+
+
+
+
+
+
+
+}
+
+@media (max-width: 992px) {
+  .title {
+    font-size: 32px !important;
+    line-height: 125% !important;
+  }
+
+  .dss-about .title {
+    font-size: 24px !important;
+  }
+
+  .intro__bg {
+    height: 440px;
+  }
+
+  .intro__bg {
+    padding: 115px 0 0 0;
+  }
+
+  .intro__slider {
+    width: 205px;
+    height: 208px;
+  }
+
+  .intro__top {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    &>p {
+      margin: 0 0 0 20px;
+      width: calc(100% - 120px);
+      font-size: 18px;
+    }
+  }
+
+  .intro h1 {
+    margin: 0 0 10px 0;
+    width: 100%;
+    order: -1;
+    font-size: 40px;
+  }
+
+  .dss-about__inner {
+    flex-direction: column;
+  }
+
+  .dss-about .title {
+    text-indent: 0;
+  }
+
+  .dss-about__box {
+    flex-direction: column;
+    order: 3;
+  }
+
+  .dss-about__text {
+    max-width: 100% !important;
+    margin: 0 0 20px 0 !important;
+  }
+
+  .intro__inner {
+    padding: 6px 0 40px 0;
+    border-bottom: 1px solid #ffca29;
+  }
+
+  .dss-about__left h3 {
+    font-size: 14px;
+    margin: 0 0 15px 0;
+  }
+
+  .dss-about__inner {
+    padding: 35px 0 20px;
+    border-bottom: 1px solid #ffca29;
+  }
+
+  .dss-about__right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dss-about img {
+    margin: 0 0 30px 0;
+  }
+
+  .dss-prints__inner {
+    flex-direction: column;
+  }
+
+  .dss-prints__left {
+    position: static;
+  }
+
+  .dss-prints__inner {
+    padding: 40px 0 75px;
+    border-bottom: 1px solid #ffca29;
+  }
+
+  .dss-prints__slider {
+    display: block !important;
+  }
+
+  .dss-prints__right {
+    display: none;
+  }
+
+  .dss-prints__left {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .dss-prints .btn {
+    width: 100%;
+    margin: 40px 0 0 0;
+  }
+
+  .dss-arts__inner {
+    padding: 45px 0 75px;
+    border-bottom: 1px solid #ffca29;
+  }
+
+  .dss-colections__inner {
+    flex-direction: column;
+  }
+
+  .dss-colections__left {
+    max-width: 100%;
+    margin: 0 0 30px 0;
+    position: static;
+  }
+
+  .dss-colections__inner {
+    padding: 40px 0 160px;
+  }
+
+  .dss-colections .title {
+    margin: 0 0 15px 0;
+  }
+
+  .dss-colections__top {
+    margin: 0 0 20px 0
+  }
+
+  .dss-colections__item img {
+    margin: 0 0 5px;
+  }
+
+  .dss-colections__item p {
+    font-size: 14px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media (max-width: 768px) {
+
+  .dss-item__name,
+  .dss-item__author,
+  .dss-arts__name,
+  .dss-arts__info {
+    font-size: 14px;
+  }
+
+  .dss-item__price {
+    margin: 15px 0 0 0;
+    font-size: 14px;
+  }
+
+
+  .dss-arts .swiper-button-next,
+  .dss-arts .swiper-button-prev {
+    display: none;
+  }
+
+  .dss-arts__slider img {
+    margin: 0 0 10px 0;
+  }
+
+  .dss-arts__name {
+    margin: 0;
+  }
+
+  .dss-colections__top {
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    word-break: keep-all;
+    overflow: auto;
+  }
+
+  .dss-colections__item {
+    width: calc(50% - 10px);
+    margin: 0 0 10px 10px;
+  }
+
+  .dss-colections__top a {
+    font-size: 18px;
+  }
+
+  .dss-colections__top a {
+    padding: 5px 7px;
+  }
+
+
+
+
+
+
+}
+
+@media (max-width: 576px) {}
+
+@media (max-width: 375px) {
+  .intro h1 {
+    font-size: 32px;
+  }
+
+  .intro__top img {
+    width: 75px;
+    height: 75px;
+  }
+}

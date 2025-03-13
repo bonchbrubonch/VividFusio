@@ -399,11 +399,7 @@
 }
 
 .dss-prints {
-  overflow: hidden;
-
-  .dss-prints__slider {
-    display: none;
-  }
+  // overflow: hidden;
 
   .title {
     margin: 0 0 40px 0;
@@ -422,20 +418,28 @@
     height: fit-content;
     max-width: 340px;
     width: 100%;
+    flex-shrink: 0;
     margin: 0 20px 0 0;
 
   }
 
   &__right {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 0 0 -10px;
+    overflow: hidden;
 
-    .dss-item {
-      margin: 0 0 30px 10px;
-      width: calc(33.33333% - 10px);
+    .btn {
+      display: none;
     }
+  }
+
+  .dss-prints__slider {
+    width: 100%;
+    // overflow: hidden;
+    height: 1085px;
+  }
+
+  .swiper-slide {
+    height: calc((100% - 30px)/2) !important;
   }
 
 
@@ -644,7 +648,12 @@
 }
 
 .dss-colections {
-overflow: hidden;
+  overflow: hidden;
+
+  &__swipe {
+    display: none;
+  }
+
   .title {
     margin: 0 0 40px 0;
   }
@@ -744,9 +753,15 @@ overflow: hidden;
     margin: 0 0 20px 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     img {
+      margin: 0 0 0 10px;
       transform: rotate(180deg);
+    }
+
+    a {
+      text-transform: uppercase;
     }
   }
 
@@ -982,6 +997,7 @@ overflow: hidden;
     border-bottom: 1px solid rgb(225, 225, 225);
 
     h1 {
+      font-size: 32px;
       font-weight: 400;
       line-height: 120%;
     }
@@ -1153,6 +1169,7 @@ overflow: hidden;
     width: 50px;
     height: 50px;
     flex-shrink: 0;
+    font-size: 0;
 
     img {
       position: absolute;
@@ -1232,9 +1249,13 @@ overflow: hidden;
   right: 0;
 }
 
+.slider-page {
+  width: 100%;
+  overflow: hidden;
+}
 
 .cards-four-col {
-  padding: 0 0 60px 0;
+  padding: 25px 0 75px 0;
 
   .title {
     margin: 0 0 30px 0;
@@ -1246,11 +1267,23 @@ overflow: hidden;
     margin: 0 0 0 -1px;
   }
 
-  .dss-item {
-    width: calc(25% - 10px);
-    margin: 0 0 20px 10px;
-  }
+}
 
+.dss-item__btn {
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.dss-blog__select {
+  display: none;
+}
+.dss-article__top-item{
+  p{
+    color: #000  !important;
+  }
 }
 
 .dss-author {
@@ -1269,6 +1302,14 @@ overflow: hidden;
   &__left {
     padding: 0 20px 0 0;
     width: 50%;
+
+    .dss-author__right {
+      display: none;
+    }
+
+    ul {
+      display: none;
+    }
   }
 
   &__box {
@@ -1326,11 +1367,16 @@ overflow: hidden;
       margin: 0 0 0 10px;
       display: flex;
       flex-direction: column;
+      height: fit-content;
 
       li {
         margin: 0 0 10px 0;
       }
     }
+  }
+
+  &__right {
+    width: 100%;
   }
 
   &__lg {
@@ -1348,7 +1394,8 @@ overflow: hidden;
 
   &__videos-box {
     display: flex;
-    margin: 0 0 0 -10px;
+    column-gap: 5px;
+    width: 100%;
   }
 
   &__sm {
@@ -1359,6 +1406,12 @@ overflow: hidden;
   &__lg,
   &__sm {
     position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
     &:hover {
       &::after {
@@ -1425,6 +1478,14 @@ overflow: hidden;
     padding: 0 12px 0 0;
   }
 
+  &__filter-top {
+    display: none;
+  }
+
+  &__filters-btn {
+    display: none;
+  }
+
   .form__box {
     margin: 0 0 10px 0;
     display: flex;
@@ -1449,9 +1510,10 @@ overflow: hidden;
   }
 
   .form__box input[type=checkbox]:checked {
-    background-image: url("../images/icons/check.svg");
+    border: 1px solid #000;
+    background-image: url("../images/icons/check-white.svg");
     background-repeat: no-repeat;
-    background-size: 19px 14px;
+    background-size: 100%;
     background-position: center
   }
 
@@ -1528,6 +1590,7 @@ overflow: hidden;
 
   &__right-box {
     display: flex;
+    flex-wrap: wrap;
     margin: 0 0 30px 0;
   }
 
@@ -1613,11 +1676,13 @@ overflow: hidden;
     column-gap: 5px;
 
     a {
+      display: flex;
       padding: 8px;
       color: rgb(140, 140, 140);
       font-size: 20px;
       font-weight: 400;
       transition: linear .2s;
+      text-transform: uppercase;
 
       &:hover {
         color: #000;
@@ -1652,12 +1717,12 @@ overflow: hidden;
     height: 310px;
     padding: 15px;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
     transition: linear .2s;
 
     &:hover {
-      background-size: 105%;
+      transform: scale(1.03);
     }
   }
 
@@ -1827,6 +1892,7 @@ overflow: hidden;
 
 .select-wrap {
   margin: 0 0 15px 0;
+  height: fit-content;
 
   select {
     padding: 5px 30px 5px 5px;
@@ -1991,6 +2057,7 @@ overflow: hidden;
 
   &__logo {
     width: 330px;
+    flex-shrink: 0;
 
     img {
       width: 100%;

@@ -18,6 +18,31 @@ $(function () {
 
 })
 
+/////////////
+const filtersBtn = document.querySelector('.catalog__filters-btn');
+const closeBtn = document.querySelector('.catalog__close');
+const catalogFilter = document.querySelector('.catalog__filter');
+const body = document.body;
+
+// Перевірка наявності елементів на сторінці
+if (filtersBtn && closeBtn && catalogFilter) {
+  // Додавання/видалення класів при кліці на кнопку фільтрів
+  filtersBtn.addEventListener('click', () => {
+    catalogFilter.classList.toggle('open');
+    body.classList.toggle('lock');
+  });
+
+  // Видалення класів при кліці на кнопку закриття
+  closeBtn.addEventListener('click', () => {
+    catalogFilter.classList.remove('open');
+    body.classList.remove('lock');
+  });
+}
+``
+
+
+
+
 // клас sticky для шапки при скроллі
 const navOffset = document.querySelector('.header').offsetTop + 10;
 window.addEventListener('scroll', function () {
@@ -47,7 +72,6 @@ var swiper = new Swiper(".dss-arts__slider", {
 var swiper = new Swiper(".artists__slider", {
   slidesPerView: 2,
   spaceBetween: 5,
-  loop: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -98,9 +122,14 @@ var swiper2 = new Swiper(".product__slider", {
   },
 });
 
-var swiper = new Swiper(".dss-prints__slider", {
+var swiper = new Swiper(".slider-page", {
+  loop: true,
   spaceBetween: 10,
-  slidesPerView: 1.2,
+  slidesPerView: 1.4,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
   breakpoints: {
     400: {
       slidesPerView: 2,
@@ -108,8 +137,43 @@ var swiper = new Swiper(".dss-prints__slider", {
     768: {
       slidesPerView: 3,
     },
+    992: {
+      slidesPerView: 4,
+    },
   }
 });
+
+
+var swiper = new Swiper(".dss-prints__slider", {
+  slidesPerView: 1.4,
+  loop: true,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
+  grid: {
+    rows: 1,
+  },
+  spaceBetween: 10,
+  breakpoints: {
+    576: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+      grid: {
+        rows: 1,
+      },
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+      grid: {
+        rows: 2,
+      },
+    },
+  },
+});
+
+
 
 
 /////////////////////
@@ -161,3 +225,23 @@ if (containerEl) {
 }
 
 
+///////
+document.addEventListener('DOMContentLoaded', function () {
+  const select = document.querySelector('.dss-blog__select');
+  const buttonsContainer = document.querySelector('.dss-blog__btns');
+  const buttons = buttonsContainer.querySelectorAll('button');
+
+  // Додаємо клас open при кліці на dss-blog__select
+  select.addEventListener('click', function () {
+    buttonsContainer.classList.toggle('open');
+  });
+
+  // Переносимо текст з button в dss-blog__select та прибираємо клас open після кліку
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      const buttonText = button.innerText.trim();
+      select.textContent = buttonText;
+      buttonsContainer.classList.remove('open'); // Прибираємо клас open
+    });
+  });
+});
